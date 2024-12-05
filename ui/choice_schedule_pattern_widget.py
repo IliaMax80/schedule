@@ -22,9 +22,9 @@ class Ui_ChoiceSchedulePatternWidget(object):
         self.horizontalLayout.addWidget(self.choice_name)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
-        self.default_selection_buuton = QtWidgets.QPushButton(parent=ChoiceSchedulePatternWidget)
-        self.default_selection_buuton.setObjectName("default_selection_buuton")
-        self.horizontalLayout.addWidget(self.default_selection_buuton)
+        self.default_selection_button = QtWidgets.QPushButton(parent=ChoiceSchedulePatternWidget)
+        self.default_selection_button.setObjectName("default_selection_buuton")
+        self.horizontalLayout.addWidget(self.default_selection_button)
         self.create_schedule_pattern_button = QtWidgets.QPushButton(parent=ChoiceSchedulePatternWidget)
         self.create_schedule_pattern_button.setObjectName("create_schedule_pattern_button")
         self.horizontalLayout.addWidget(self.create_schedule_pattern_button)
@@ -35,5 +35,5 @@ class Ui_ChoiceSchedulePatternWidget(object):
     def retranslateUi(self, ChoiceSchedulePatternWidget):
         _translate = QtCore.QCoreApplication.translate
         ChoiceSchedulePatternWidget.setWindowTitle(_translate("ChoiceSchedulePatternWidget", "Form"))
-        self.default_selection_buuton.setText(_translate("ChoiceSchedulePatternWidget", "Выбрать по умолчанию"))
+        self.default_selection_button.setText(_translate("ChoiceSchedulePatternWidget", "Выбрать по умолчанию"))
         self.create_schedule_pattern_button.setText(_translate("ChoiceSchedulePatternWidget", "Создать"))

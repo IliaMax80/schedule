@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'SheduleWindow.ui'
+# Form implementation generated from reading ui file 'ScheduleWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -10,10 +10,10 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 
 
 class Ui_ScheduleWindow(object):
-    def setupUi(self, SheduleWindow):
-        SheduleWindow.setObjectName("SheduleWindow")
-        SheduleWindow.resize(853, 600)
-        self.central_widget = QtWidgets.QWidget(parent=SheduleWindow)
+    def setupUi(self, ScheduleWindow):
+        ScheduleWindow.setObjectName("ScheduleWindow")
+        ScheduleWindow.resize(853, 0)
+        self.central_widget = QtWidgets.QWidget(parent=ScheduleWindow)
         self.central_widget.setObjectName("central_widget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.central_widget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -24,44 +24,44 @@ class Ui_ScheduleWindow(object):
         font.setPointSize(12)
         self.main_tab_widget.setFont(font)
         self.main_tab_widget.setObjectName("main_tab_widget")
-        self.shedule_day_tab = QtWidgets.QWidget()
+        self.schedule_day_tab = QtWidgets.QWidget()
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.shedule_day_tab.setFont(font)
-        self.shedule_day_tab.setObjectName("shedule_day_tab")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.shedule_day_tab)
+        self.schedule_day_tab.setFont(font)
+        self.schedule_day_tab.setObjectName("schedule_day_tab")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.schedule_day_tab)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_2.setSpacing(2)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.schedule_day_layout = QtWidgets.QVBoxLayout()
         self.schedule_day_layout.setSpacing(2)
-        self.schedule_day_layout.setObjectName("shedule_day_layout")
+        self.schedule_day_layout.setObjectName("schedule_day_layout")
         self.verticalLayout_2.addLayout(self.schedule_day_layout)
-        self.main_tab_widget.addTab(self.shedule_day_tab, "")
-        self.shedule_pattern_tab = QtWidgets.QWidget()
-        self.shedule_pattern_tab.setObjectName("shedule_pattern_tab")
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.shedule_pattern_tab)
+        self.main_tab_widget.addTab(self.schedule_day_tab, "")
+        self.schedule_pattern_tab = QtWidgets.QWidget()
+        self.schedule_pattern_tab.setObjectName("schedule_pattern_tab")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.schedule_pattern_tab)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3.setSpacing(2)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.shedule_pattern_layout = QtWidgets.QVBoxLayout()
-        self.shedule_pattern_layout.setSpacing(2)
-        self.shedule_pattern_layout.setObjectName("shedule_pattern_layout")
-        self.verticalLayout_3.addLayout(self.shedule_pattern_layout)
-        self.main_tab_widget.addTab(self.shedule_pattern_tab, "")
+        self.schedule_pattern_layout = QtWidgets.QVBoxLayout()
+        self.schedule_pattern_layout.setSpacing(2)
+        self.schedule_pattern_layout.setObjectName("schedule_pattern_layout")
+        self.verticalLayout_3.addLayout(self.schedule_pattern_layout)
+        self.main_tab_widget.addTab(self.schedule_pattern_tab, "")
         self.verticalLayout.addWidget(self.main_tab_widget)
-        SheduleWindow.setCentralWidget(self.central_widget)
-        self.menubar = QtWidgets.QMenuBar(parent=SheduleWindow)
+        ScheduleWindow.setCentralWidget(self.central_widget)
+        self.menubar = QtWidgets.QMenuBar(parent=ScheduleWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 853, 26))
         self.menubar.setObjectName("menubar")
-        SheduleWindow.setMenuBar(self.menubar)
+        ScheduleWindow.setMenuBar(self.menubar)
 
-        self.retranslateUi(SheduleWindow)
+        self.retranslateUi(ScheduleWindow)
         self.main_tab_widget.setCurrentIndex(1)
-        QtCore.QMetaObject.connectSlotsByName(SheduleWindow)
+        QtCore.QMetaObject.connectSlotsByName(ScheduleWindow)
 
-    def retranslateUi(self, SheduleWindow):
+    def retranslateUi(self, ScheduleWindow):
         _translate = QtCore.QCoreApplication.translate
-        SheduleWindow.setWindowTitle(_translate("SheduleWindow", "MainWindow"))
-        self.main_tab_widget.setTabText(self.main_tab_widget.indexOf(self.shedule_day_tab), _translate("SheduleWindow", "Расписание"))
-        self.main_tab_widget.setTabText(self.main_tab_widget.indexOf(self.shedule_pattern_tab), _translate("SheduleWindow", "Шаблоны"))
+        ScheduleWindow.setWindowTitle(_translate("ScheduleWindow", "MainWindow"))
+        self.main_tab_widget.setTabText(self.main_tab_widget.indexOf(self.schedule_day_tab), _translate("ScheduleWindow", "Расписание"))
+        self.main_tab_widget.setTabText(self.main_tab_widget.indexOf(self.schedule_pattern_tab), _translate("ScheduleWindow", "Шаблоны"))
