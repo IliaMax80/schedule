@@ -10,7 +10,12 @@ class AffairPeriod:
         if isinstance(id, int):
             self.id: int = id
         else:
-            self.id: int = max(DataBase.get_ids_affair_period()) + 1
+            ids: list[int] = DataBase.get_ids_affair_period()
+            if len(ids) == 0:
+                self.id: int = 0
+            else:
+                self.id: int = max(ids) + 1
+
         self.start: time = start
         self.end: time = end
         self.affair: str = affair
