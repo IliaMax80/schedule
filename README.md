@@ -1,13 +1,19 @@
 Запуск:
   Установить python версии 3.10+ (Тестировалось на версии 3.10.4)
   Склонировать репозиторий и перейти в него:
-  
+
+  ```
   git clone https://github.com/IliaMax80/schedule.git
   cd ./schedule
-  
+  ```
   Установить все библиотеки, перечисленные в requiremenets.txt файле с помощью (python -m pip install -r ./requirements или pip install -r requirements.txt)
-  
-  Запустить игру с помощью команды python main.py
+  ```
+pip install -r requirements.txt
+```
+  Запустить игру с помощью команды 
+  ```
+python main.py
+```
   
   Советую, перед тем как заходить в отдел Расписание на день, полностью заполнить на неделю шаблонов
 
